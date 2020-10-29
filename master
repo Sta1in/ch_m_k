@@ -1,0 +1,41 @@
+#include <iostream> 
+#include <cmath> 
+using namespace std;
+
+class f1 
+{ 
+private: double storona1; 
+double storona2; 
+double visota; 
+double ugol;
+
+public: 
+f1() { 
+cout <<"Введите сторону а"; 
+cin >> storona1; 
+cout <<"Введите сторону б (к ней опущена высота)"; 
+cin >> storona2;
+cout <<"Введите высоту"; 
+cin >> visota; 
+ugol = visota/ storona1; 
+}; 
+double perim () 
+{ return ((storona1*2+storona2*2)); 
+}; 
+double s(); 
+};
+
+double f1::s() 
+{ 
+return storona1*storona2*ugol; 
+}
+
+int main() 
+{setlocale(LC_ALL,"Russian"); 
+{ 
+f1 a; 
+cout << a.s() <<endl;
+cout << a.perim(); 
+} 
+system("pause"); 
+}
