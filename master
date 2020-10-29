@@ -1,7 +1,7 @@
 #include <iostream> 
 #include <cmath> 
 using namespace std;
-
+//Ну внес я изменения и сюда ради скриншота...ну да я и что.
 class f1 
 { 
 private: double storona1; 
